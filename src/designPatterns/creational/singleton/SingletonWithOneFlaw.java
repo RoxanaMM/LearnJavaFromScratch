@@ -8,7 +8,7 @@ Acel delay poate cauza probleme intr-un mediu de multi-threading.
 * */
 public class SingletonWithOneFlaw {
 
-    private static SingletonWithOneFlaw instantance;
+    private static transient SingletonWithOneFlaw instantance;
 
     private SingletonWithOneFlaw() {
     }

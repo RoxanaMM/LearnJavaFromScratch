@@ -4,6 +4,8 @@ import java.io.*;
 
 public class BreakingTheSingletonWithSerilization {
 
+    private static final String fileNamefromDisk = "C:\\Users\\RoxanaM\\Desktop\\kiki.txt";
+
     public static void main(String[] args) {
 
         AlmostPerfectSingleton singleton = AlmostPerfectSingleton.getInstance();
@@ -13,7 +15,7 @@ public class BreakingTheSingletonWithSerilization {
         System.out.println(singleton.hashCode());
 
         try {
-            fileOutputStream = new FileOutputStream("C:\\Users\\Roxi\\Desktop\\Grecia.txt");
+            fileOutputStream = new FileOutputStream(fileNamefromDisk);
             objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(singleton);
 
@@ -28,7 +30,7 @@ public class BreakingTheSingletonWithSerilization {
         ObjectInputStream objectInputStream = null;
         AlmostPerfectSingleton singletonRead = AlmostPerfectSingleton.getInstance();
         try{
-            fileInputStream = new FileInputStream("C:\\Users\\Roxi\\Desktop\\Grecia.txt");
+            fileInputStream = new FileInputStream(fileNamefromDisk);
             objectInputStream = new ObjectInputStream(fileInputStream);
             singletonRead = (AlmostPerfectSingleton) objectInputStream.readObject();
 

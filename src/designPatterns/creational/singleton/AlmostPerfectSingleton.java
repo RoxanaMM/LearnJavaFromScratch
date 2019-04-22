@@ -12,7 +12,7 @@ invoke the private constructor refectively AccessibleObject.setAccessible method
  */
 public class AlmostPerfectSingleton implements Serializable, Cloneable {
 
-    private static final AlmostPerfectSingleton INSTANCE = new AlmostPerfectSingleton();
+    private static final transient AlmostPerfectSingleton INSTANCE = new AlmostPerfectSingleton();
 
     private AlmostPerfectSingleton(){
         System.out.println("Hello from private COnstructor");
