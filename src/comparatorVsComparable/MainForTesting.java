@@ -20,12 +20,13 @@ public class MainForTesting {
         Collections.sort(list);
         System.out.println("Movies after sorting : ");
 
-    //    Movie movie = new Movie("ion cu soarca",2,2002);
-        Collections.sort(list);//, Movie.BY_RATING_COMPARATOR.reversed());
+
+            Movie movie = new Movie("ion cu soarca",2,2002);
+            Movie.BY_RATING_COMPARATOR.reversed();
+            Collections.sort(list);
 
 
-        for (Movie movie: list)
-        {
+        for (Movie movie1: list){
             System.out.println(movie.getName() + " " +
                     movie.getRating() + " " +
                     movie.getYear());

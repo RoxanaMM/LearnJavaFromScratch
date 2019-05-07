@@ -27,6 +27,7 @@ public class AlmostPerfectSingleton implements Serializable, Cloneable {
 
 
     //protected from serializable deserialization creation of a new instance
+    // readResolve() returns the private static instance of MySingleton, thus overriding the instance returned by the deserialization.
     public Object readResolve() throws ClassCastException{
         return INSTANCE;
     }
