@@ -1,4 +1,4 @@
-package multiThreading;
+package multiThreading.testingThreads;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

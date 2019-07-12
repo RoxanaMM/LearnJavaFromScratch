@@ -1,5 +1,7 @@
 package basicsTesting.equalsTesting;
 
+import java.util.HashSet;
+
 public class EqualsTesting {
 
 
@@ -16,7 +18,10 @@ public class EqualsTesting {
 
         System.out.println("The equals comparison: ");
         System.out.println(variable1.equals(variable2));
-
+        HashSet<String>newHashSet = new HashSet<>();
+        newHashSet.add(variable1);
+        System.out.println(newHashSet.contains(variable1));
+        System.out.println();
         String variable3 = variable1 + variable2;
 
     }

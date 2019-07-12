@@ -3,7 +3,7 @@ package basicsTesting.serialiaztion;
 import java.io.*;
 
 public class EmployeeSerilizationMainTesting extends EmployeeSerialization
-    {
+    implements Serializable{
 
     private String s;
     private EmployeeSerialization employeeSerilization;
@@ -38,7 +38,7 @@ public class EmployeeSerilizationMainTesting extends EmployeeSerialization
     }
 
     public static void main(String []args){
-        String fileName = "C:\\Users\\RoxanaM\\Desktop\\kiki.txt";
+        String fileName = "C:\\Users\\RoxanaM\\Desktop\\roxi.txt";
         EmployeeSerilizationMainTesting employeeSerializationMainTesting = new EmployeeSerilizationMainTesting("Serial");
 
         try {
