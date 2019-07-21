@@ -4,7 +4,7 @@ import java.io.*;
 
 public class BreakingTheSingletonWithSerilization {
 
-    private static final String fileNamefromDisk = "C:\\Users\\RoxanaM\\Desktop\\kiki.txt";
+    private static final String fileNamefromDisk = "C:\\Users\\Roxi\\Desktop\\kiki.txt";
 
     public static void main(String[] args) {
 

@@ -7,6 +7,6 @@ public class Car extends Vehicle{
     }
 
     public void manufacture(){
-        System.out.println("Car");
+        System.out.println("CarPrototype");
     }
 }

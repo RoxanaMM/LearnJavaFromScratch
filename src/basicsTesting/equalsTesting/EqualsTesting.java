@@ -7,7 +7,7 @@ public class EqualsTesting {
 
     public  static void main(String...args){
         String variable1 = "variable";
-        String variable2 = new String ("variable");
+        String variable2 = "variable";
 
         System.out.println("The == comparison: ");
         System.out.println(variable1 == variable2);
