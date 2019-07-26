@@ -1,4 +1,6 @@
 package testingDesignPatterns.creational.abstractFactory;
 
-public class TestingTheAbstractFactory {
+public enum CartoonType {
+    FOR_TODDLERS,
+    FOR_CHILDREN
 }
