@@ -1,8 +1,8 @@
-package testingDesignPatterns.creational.abstractFactory;
+package testingDesignPatterns.creational.abstractFactory.cartoon;
 
 public class ChineeseCartoonFactory {
 
-    public Cartoon chineeseCartoonFactory(CartoonType cartoonType){
+    public static Cartoon chineeseCartoonFactory(CartoonType cartoonType){
         switch (cartoonType){
             case FOR_CHILDREN:
                 return new ChineeseCartoon(cartoonType);
