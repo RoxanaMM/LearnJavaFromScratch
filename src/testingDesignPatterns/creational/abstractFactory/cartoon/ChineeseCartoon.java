@@ -1,4 +1,4 @@
-package testingDesignPatterns.creational.abstractFactory;
+package testingDesignPatterns.creational.abstractFactory.cartoon;
 
 public class ChineeseCartoon extends Cartoon{
 
