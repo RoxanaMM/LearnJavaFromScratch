@@ -1,4 +1,4 @@
-package testingDesignPatterns.structural;
+package testingDesignPatterns.structural.adapter;
 
 public class MovableAdapterImpl implements MovableAdapter {
 

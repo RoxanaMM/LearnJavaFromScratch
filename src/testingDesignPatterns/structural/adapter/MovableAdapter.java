@@ -1,4 +1,4 @@
-package testingDesignPatterns.structural;
+package testingDesignPatterns.structural.adapter;
 
 public interface MovableAdapter {
     //returns in km
