@@ -1,7 +1,8 @@
 package testingDesignPatterns.behavioural.mediator;
 
 public class Fan {
-    private boolean isFanOn;
+    private boolean isFanOn = false;
+    public Mediator mediator = new Mediator();
 
     public boolean isFanOn() {
         return isFanOn;
@@ -11,11 +12,15 @@ public class Fan {
         isFanOn = fanOn;
     }
 
-    public void turnOnFan() {
+    public void turnFanOn() {
+        mediator.turnPowerOn();
         System.out.println("Fan turned on");
+        isFanOn = true;
     }
 
-    public void turnOffFan() {
-        System.out.println("Fan turned on");
+    public void turnFanOff(){
+        System.out.println("Fan turned off");
+        isFanOn = false;
+        mediator.turnPowerOff();
     }
 }

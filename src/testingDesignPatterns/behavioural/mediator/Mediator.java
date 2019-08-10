@@ -1,17 +1,24 @@
 package testingDesignPatterns.behavioural.mediator;
 
 public class Mediator {
-    Button button = new Button();
-    Fan fan = new Fan();
-    PowerSupplier powerSupplier = new PowerSupplier();
+    private Button button = new Button();
+    private Fan fan = new Fan();
+    private PowerSupplier powerSupplier = new PowerSupplier();
 
-    public void pressButton(){
+    public void press(){
         if(fan.isFanOn()){
-            fan.turnOffFan();
-            powerSupplier.turnOffPower();
-        } else{
-            powerSupplier.turnOnPower();
-            fan.turnOnFan();
+            fan.turnFanOff();
+        } else {
+            fan.turnFanOn();
         }
     }
+
+    public void turnPowerOn(){
+        powerSupplier.turnOnPower();
+    }
+
+    public void turnPowerOff(){
+        powerSupplier.turnOffPower();
+    }
+
 }

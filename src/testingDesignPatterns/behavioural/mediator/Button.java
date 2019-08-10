@@ -4,6 +4,7 @@ public class Button {
     Mediator mediator = new Mediator();
 
     public void pressButton(){
-        mediator.pressButton();
+        mediator.press();
     }
+
 }

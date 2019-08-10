@@ -1,9 +1,9 @@
 package testingDesignPatterns.behavioural.mediator;
 
-public class TestMediator {
+public class TestingMediator {
 
     public static void main(String...args){
-        Mediator mediator = new Mediator();
-        mediator.press();
+        Button button = new Button();
+        button.pressButton();
     }
 }
