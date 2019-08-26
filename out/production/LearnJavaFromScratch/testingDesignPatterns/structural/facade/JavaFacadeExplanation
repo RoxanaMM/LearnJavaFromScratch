@@ -1,0 +1,4 @@
+I think this is a redundant design pattern.
+It can hide all the implementation details but in the same time you lose your control over the code
+and moreover the problem is that there will be so much abstraction and the changes will be costly.
+I don't find it necessary to implement it as I will probably never want to use it.

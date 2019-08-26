@@ -1,9 +1,17 @@
 package java8NewFeatures.multipleInheritance;
 
-public class Audi implements AutoVehicle, Car {
+public class Audi implements Vehicle {
+    @Override
+    public void start() {
+        System.out.println("start");
+    }
 
     @Override
-    public void honk() {
-        AutoVehicle.super.honk();
+    public void stop() {
+        System.out.println("stop");
+    }
+
+    public void interfaceCallingMethod(){
+        Vehicle.producer();
     }
 }
