@@ -1,6 +1,6 @@
 package basicsTesting.algorithms;
 
-public class printNumbersFancier {
+public class PrintNumbersFancier {
 
     private static void printNumbersZerosAndOnes(int max) {
         int nr = 1, helper = 1;

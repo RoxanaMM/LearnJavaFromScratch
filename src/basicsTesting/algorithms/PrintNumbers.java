@@ -1,6 +1,6 @@
 package basicsTesting.algorithms;
 
-public class printNumbers {
+public class PrintNumbers {
 
     private static void printNumbersZerosAndOnes() {
         int nr = 1;
