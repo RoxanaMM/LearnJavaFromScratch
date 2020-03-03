@@ -10,7 +10,7 @@ class Consumer extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Prooducer's thread + " + currentThread().getId());
+        System.out.println(Consumer.class.getName() + "'s thread + " + currentThread().getId());
         try {
             while (true) {
                 String message = producer.getMessage();

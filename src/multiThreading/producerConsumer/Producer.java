@@ -11,7 +11,7 @@ class Producer extends Thread {
     public void run() {
         try {
             while (true) {
-                System.out.println(currentThread().getId());
+                System.out.println("Producer's thread with: " + currentThread().getId());
                 putMessage();
                 //sleep(5000);
             }
@@ -24,7 +24,7 @@ class Producer extends Thread {
             wait();
         }
         messages.addElement(new java.util.Date().toString());
-        System.out.println("put message");
+        System.out.println("Producer: " + currentThread().getId() + "put message");
         notify();
         //Later, when the necessary event happens, the thread that is running it calls notify() from a block synchronized on the same object.
     }
